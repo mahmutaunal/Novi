@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Novi Android ve macOS uygulamaları için Gizlilik Politikası / Privacy Policy.">
+  <title>Novi Gizlilik Politikası | Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: rgba(255, 255, 255, .88);
+      --text: #172033;
+      --muted: #5f6b7d;
+      --line: #dce2ec;
+      --accent: #5257d8;
+      --accent-soft: #e9eaff;
+      --good: #19704b;
+      --shadow: 0 18px 55px rgba(32, 42, 75, .10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1320;
+        --surface: rgba(24, 30, 47, .92);
+        --text: #edf0f7;
+        --muted: #aeb7c7;
+        --line: #303a52;
+        --accent: #aeb1ff;
+        --accent-soft: #282d59;
+        --good: #86d9ae;
+        --shadow: 0 18px 55px rgba(0, 0, 0, .28);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(104, 110, 255, .16), transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    .shell { width: min(100% - 32px, 920px); margin: 0 auto; }
+    header { padding: 56px 0 28px; }
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--surface);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 16px 0 8px; font-size: clamp(2.1rem, 7vw, 3.7rem); line-height: 1.05; letter-spacing: -.045em; }
+    .lead { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.08rem; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .language-button {
+      appearance: none;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 9px 14px;
+      color: var(--text);
+      background: var(--surface);
+      font: inherit;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    .language-button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+    .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 8px 0 28px; }
+    .summary-card { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+    .summary-card strong { display: block; color: var(--good); margin-bottom: 4px; }
+    main { padding-bottom: 64px; }
+    article { padding: clamp(22px, 5vw, 48px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface); box-shadow: var(--shadow); }
+    article h2 { margin: 2.2em 0 .55em; font-size: 1.45rem; letter-spacing: -.015em; }
+    article h2:first-of-type { margin-top: 1.2em; }
+    article h3 { margin: 1.55em 0 .4em; font-size: 1.08rem; }
+    article p, article ul { color: var(--muted); }
+    article strong { color: var(--text); }
+    article li + li { margin-top: .32em; }
+    .meta { padding: 14px 16px; border-left: 4px solid var(--accent); border-radius: 0 12px 12px 0; background: var(--accent-soft); }
+    .meta p { margin: 2px 0; color: var(--text); }
+    .notice { margin: 24px 0; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }
+    .toc { columns: 2; padding-left: 1.25rem; }
+    footer { padding: 26px 0 46px; color: var(--muted); text-align: center; font-size: .9rem; }
+    [hidden] { display: none !important; }
+    @media (max-width: 680px) {
+      header { padding-top: 34px; }
+      .summary-grid { grid-template-columns: 1fr; }
+      .toc { columns: 1; }
+      article { border-radius: 18px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      .toolbar, .summary-grid, footer { display: none; }
+      article { border: 0; box-shadow: none; padding: 0; }
+      a { color: inherit; }
+    }
+  </style>
+  <noscript><style>.policy[hidden] { display: block !important; } .toolbar { display: none; }</style></noscript>
+</head>
+<body>
+  <header class="shell">
+    <span class="eyebrow">Novi · Android + macOS</span>
+    <h1>Gizlilik Politikası<br><span lang="en">Privacy Policy</span></h1>
+    <p class="lead">Novi’nin bildirimleri ve süreklilik verilerini eşleştirilmiş cihazlar arasında nasıl işlediğini açıklayan tek ve ortak politika.</p>
+    <div class="toolbar" role="group" aria-label="Dil / Language">
+      <button class="language-button" type="button" data-language="tr" aria-pressed="true">Türkçe</button>
+      <button class="language-button" type="button" data-language="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <div class="summary-grid" aria-label="Gizlilik özeti">
+      <div class="summary-card"><strong>Yerel bağlantı</strong>İçerik, eşleştirdiğiniz Android ve Mac arasında doğrudan aktarılır.</div>
+      <div class="summary-card"><strong>Takip ve reklam yok</strong>Novi reklam, davranış analitiği veya kullanıcı profilleme SDK’sı içermez.</div>
+      <div class="summary-card"><strong>Hesap gerektirmez</strong>Novi hesabı veya geliştirici tarafından işletilen içerik bulutu bulunmaz.</div>
+    </div>
+
+    <article id="turkish-policy" class="policy" lang="tr">
+      <div class="meta">
+        <p><strong>Yürürlük tarihi:</strong> 11 Temmuz 2026</p>
+        <p><strong>Son güncelleme:</strong> 8 Eylül 2026</p>
+        <p><strong>Uygulamalar:</strong> Novi for Android ve Novi for macOS</p>
+        <p><strong>Veri sorumlusu/geliştirici:</strong> Mahmut Alperen Ünal — AlpWare Studio</p>
+      </div>
+
+      <div class="notice">
+        <strong>Kısa açıklama:</strong> Novi, seçtiğiniz Android bildirimlerini ve etkinleştirdiğiniz süreklilik özelliklerinin içeriğini, geliştirici tarafından işletilen bir içerik sunucusuna göndermeden eşleştirilmiş Mac’inizle yerel ağ üzerinden paylaşır. Uygulamalar kişisel verilerinizi satmaz, reklam göstermez ve davranışsal takip yapmaz.
+      </div>
+
+      <h2>İçindekiler</h2>
+      <ol class="toc">
+        <li><a href="#tr-scope">Kapsam</a></li>
+        <li><a href="#tr-data">Erişilen ve işlenen veriler</a></li>
+        <li><a href="#tr-use">Kullanım amaçları</a></li>
+        <li><a href="#tr-transfer">Cihazlar arası aktarım</a></li>
+        <li><a href="#tr-third-parties">Üçüncü taraf hizmetleri</a></li>
+        <li><a href="#tr-storage">Saklama ve silme</a></li>
+        <li><a href="#tr-security">Güvenlik</a></li>
+        <li><a href="#tr-rights">Tercihleriniz ve haklarınız</a></li>
+        <li><a href="#tr-contact">İletişim</a></li>
+      </ol>
+
+      <h2 id="tr-scope">1. Kapsam ve temel mimari</h2>
+      <p>Bu politika, resmi <strong>Novi Android uygulaması</strong>, resmi <strong>Novi macOS yardımcı uygulaması</strong>, bu uygulamalar arasında kurulan yerel bağlantı ve bu GitHub Pages sayfası için geçerlidir.</p>
+      <p>Novi, kullanıcı hesabı veya geliştirici tarafından işletilen bir bildirim/aktarım bulutu kullanmaz. Android ve Mac, kullanıcının açıkça başlattığı eşleştirme sonrasında yerel ağda birbirleriyle iletişim kurar. Uygulamaların mağazaları, işletim sistemleri, ağ sağlayıcınız ve bildirim üreten üçüncü taraf uygulamalar kendi politikalarına tabidir.</p>
+      <p>Novi özel mülkiyetli ve kapalı kaynak bir yazılımdır. Bu politika yalnızca Mahmut Alperen Ünal veya AlpWare Studio tarafından yayımlanan resmi sürümler için geçerlidir; değiştirilmiş, yeniden paketlenmiş veya sahte dağıtımlar farklı davranabilir.</p>
+
+      <h2 id="tr-data">2. Erişilen ve işlenen veriler</h2>
+      <h3>2.1 Android bildirimleri</h3>
+      <p>Android Bildirim Erişimi’ni isteğe bağlı olarak verdiğinizde Novi; uygulama adı ve paket kimliği, başlık, metin, genişletilmiş içerik, zaman, kategori, simge, konuşma/gönderen bilgisi, gruplama bilgisi, yanıt veya eylem seçenekleri ve bildirimi güncellemek ya da kapatmak için gereken tanımlayıcıları işleyebilir. Bildirimler mesaj, doğrulama kodu, finansal uyarı veya sağlık bilgisi gibi hassas içerikler barındırabilir. İçeriği bildirimi oluşturan üçüncü taraf uygulama belirler.</p>
+
+      <h3>2.2 Bildirim eylemleri ve doğrudan yanıtlar</h3>
+      <p>Desteklendiğinde Mac’ten bir bildirimi kapatabilir, eylemini çalıştırabilir veya yanıt gönderebilirsiniz. Komut yerel bağlantıyla Android’e iletilir ve Android’deki ilgili üçüncü taraf uygulamaya sunulur. Bu uygulamanın yanıtı daha sonra nasıl işlediği kendi gizlilik politikasına tabidir.</p>
+
+      <h3>2.3 Pano eşitlemesi</h3>
+      <p>Pano eşitlemesini etkinleştirdiğinizde kopyalanan metin, kaynak cihaz kimliği, zaman ve tekrar döngülerini engellemek için oluşturulan teknik kimliklerle birlikte eşleştirilmiş cihaza aktarılabilir. Özellik kapatılabilir. Pano içeriği geliştirici sunucusuna gönderilmez; hassas pano içeriğini kopyalamadan veya eşitlemeden önce dikkatli olmalısınız.</p>
+
+      <h3>2.4 Dosya ve metin aktarımı</h3>
+      <p>Aktarmayı açıkça seçtiğiniz dosya veya metin için dosya adı, türü, boyutu, bütünlük özeti, aktarım kimliği, ilerleme ve hata durumu işlenebilir. Dosyanın içeriği yalnızca seçtiğiniz eşleştirilmiş cihaza gönderilir. Android’de hedefi, macOS’ta kayıt konumunu kullanıcı seçer. Tamamlanan dosyalar, kullanıcı silene kadar seçilen konumda kalır.</p>
+
+      <h3>2.5 Cihaz durumu ve uzaktan kontroller</h3>
+      <p>Bağlantı durumu, cihaz adı, son görülme zamanı, pil seviyesi ve şarj durumu gibi sınırlı cihaz bilgileri eşleştirilmiş cihazda gösterilebilir. Kullanıcının başlattığı bulma/çaldırma, sessize alma veya benzeri kontroller için komut türü ve sonucu işlenir. Novi konum, Wi‑Fi SSID geçmişi, mobil operatör geçmişi veya kullanıcı içeriğini cihaz durumu özelliğine eklemez.</p>
+
+      <h3>2.6 Eşleştirme, ağ ve güvenlik verileri</h3>
+      <p>Yerel IP adresi, bağlantı noktası, Bonjour/yerel ağ bilgisi, cihaz veya kurulum kimliği, protokol sürümü, zaman damgası, bağlantı sağlığı, eşleştirme belirteci, sertifika/parmak izi ve kriptografik anahtar malzemesi güvenli bağlantıyı kurmak ve korumak için yerel olarak işlenir. Geliştirici bu bilgileri Novi sunucusu üzerinden almaz.</p>
+
+      <h3>2.7 Kamera ve QR kodu</h3>
+      <p>Android kamera izni yalnızca siz eşleştirme QR kodunu taramayı seçtiğinizde kullanılır. Fotoğraf veya video geliştiriciye yüklenmez ve Novi tarafından bilerek saklanmaz. İzni Android ayarlarından reddedebilir veya kaldırabilirsiniz.</p>
+
+      <h3>2.8 Yerel tercihler, geçmiş ve tanılama</h3>
+      <p>Seçilen/engellenen uygulamalar, yönlendirme kuralları, hizmet ve başlangıç ayarları, tema tercihleri, eşleştirilmiş cihaz kayıtları, isteğe bağlı ve sınırlı bildirim geçmişi, sınırlı aktarım geçmişi, kuyruklar, hata kodları ve bağlantı tanıları cihazda tutulabilir. Novi, bunları geliştiricinin erişebildiği bir analiz sistemine otomatik olarak göndermez.</p>
+
+      <h3>2.9 Satın alma ve Novi Pro yetkisi</h3>
+      <p>Novi Pro yalnızca Android uygulamasında Google Play üzerinden aylık, yıllık veya tek seferlik planla satın alınır. Google ödeme ve mağaza hesabı bilgilerini kendi koşullarına göre işler; Novi tam ödeme kartı bilgilerini görmez veya saklamaz.</p>
+      <p>Android; aktif ürün kimliğini, Pro seviyesini, son başarılı Google Play uzlaştırma zamanını ve varsa yerel yeniden doğrulama son tarihini korumalı uygulama alanında saklar. Ham Google Play satın alma belirteci kalıcı olarak saklanmaz ve geliştirici sunucusuna gönderilmez. Eşleştirilmiş Mac, Android’in kimliği doğrulanmış yerel bağlantı üzerinden gönderdiği sınırlı yetki bildirimini saklayabilir. Mac’te ayrı satın alma bulunmaz.</p>
+
+      <h3>2.10 Destek iletişimi</h3>
+      <p>Bize e-posta gönderirseniz e-posta adresiniz, mesajınız ve eklediğiniz bilgiler talebinizi yanıtlamak için işlenir. Bildirim içeriği, eşleştirme sırrı, özel anahtar, parola veya doğrulama kodu göndermeyin.</p>
+
+      <h2 id="tr-use">3. Verileri kullanma amaçlarımız</h2>
+      <p>Yukarıdaki veriler yalnızca seçtiğiniz özellikleri sağlamak; cihazları eşleştirmek ve doğrulamak; bildirim, pano, dosya ve komutları iletmek; yerel geçmişi göstermek; bağlantı güvenilirliğini korumak; Pro yetkisini uygulamak; kötüye kullanımı ve tekrar saldırılarını engellemek; hata durumunu kullanıcıya açıklamak ve destek taleplerini yanıtlamak için kullanılır.</p>
+      <p><strong>Novi; reklam, reklam ölçümü, davranış analitiği, veri komisyonculuğu, kredi/istihdam/sigorta kararı, kullanıcı profilleme veya yapay zekâ modeli eğitimi amacıyla kişisel ya da hassas verileri kullanmaz.</strong></p>
+
+      <h2 id="tr-transfer">4. Cihazlar arası aktarım ve geliştirici tarafından veri toplanmaması</h2>
+      <p>İçerik, temel işlevin parçası olarak yalnızca bilerek eşleştirdiğiniz Android ve Mac arasında aktarılır. Bu aktarım, geliştiriciye veri paylaşımı veya geliştirici tarafından veri toplama amacı taşımaz. Novi’nin bildirim, pano veya dosya içeriğini alan bir bulut rölesi, reklam sunucusu ya da analiz sunucusu yoktur.</p>
+      <p>Eşleştirilmiş Mac’e, Mac kullanıcı hesabına veya macOS Bildirim Merkezi’ne erişebilen kişiler iletilen içeriği görebilir. Cihazlarınızı ve yerel ağınızı korumak sizin sorumluluğunuzdadır. Ağ yöneticileri, VPN veya güvenlik yazılımları şifreli içeriği görmeden bağlantı meta verilerini gözlemleyebilir.</p>
+
+      <h2 id="tr-third-parties">5. Üçüncü taraf hizmetleri</h2>
+      <ul>
+        <li><strong>Google Play:</strong> Android dağıtımı, uygulama içi güncellemeler, isteğe bağlı değerlendirme akışı, ödeme ve satın alma yetkisi için kullanılır. Google kendi mağaza ve teknik kayıtlarını işler.</li>
+        <li><strong>Apple ve App Store:</strong> macOS uygulamasının dağıtımı, güncellenmesi, değerlendirilmesi ve işletim sistemi bildirimleri gibi platform işlevlerini sağlar. Mac üzerinde Novi Pro satın alımı yapılmaz.</li>
+        <li><strong>Google ML Kit:</strong> Android’de eşleştirme QR kodunu cihaz üzerinde taramak için kullanılan barkod bileşenidir. Novi QR görüntülerini bir geliştirici sunucusuna yüklemez.</li>
+        <li><strong>GitHub Pages:</strong> Bu sayfayı barındırır. GitHub, güvenlik ve hizmet işletimi için ziyaretçi IP adresi ve web isteği günlükleri gibi teknik verileri kendi politikasına göre işleyebilir.</li>
+        <li><strong>Bildirim üreten uygulamalar:</strong> Bildirim içeriklerinden ve Mac’ten gönderdiğiniz yanıt veya eylemlerin sonraki kullanımından kendileri sorumludur.</li>
+      </ul>
+      <p>Resmi Novi uygulamalarında reklam, davranış analitiği, kullanıcı takibi veya geliştirici tarafından işletilen çökme raporlama SDK’sı bulunmaz.</p>
+
+      <h2 id="tr-storage">6. Yerel saklama, süreler ve silme</h2>
+      <p>Novi hesabı ve merkezi kullanıcı veritabanı bulunmadığından geliştirici normal olarak bildirimlerinizi, pano içeriğinizi, dosyalarınızı veya eşleştirme kayıtlarınızı uzaktan saklamaz.</p>
+      <ul>
+        <li>Eşleştirme bilgileri ve tercihler, cihazı kaldırana, uygulamayı sıfırlayana, verileri temizleyene veya uygulamayı kaldırana kadar cihazda kalabilir.</li>
+        <li>Yerel bildirim ve aktarım geçmişleri uygulamadaki sınırlar ve kullanıcı ayarları kapsamında saklanır; uygulama içinden temizlenebilir.</li>
+        <li>Bekleyen komutlar ve tamamlanmamış aktarım parçaları sınırlı süre/kota altında tutulur ve tamamlanınca, iptal edilince veya süresi dolunca temizlenir.</li>
+        <li>Başarıyla kaydedilmiş dosyalar kullanıcıya ait seçilmiş konumda kalır ve Finder ya da Android belge sağlayıcısı üzerinden kullanıcı tarafından silinir.</li>
+        <li>macOS Bildirim Merkezi kendi geçmişini Apple’ın ve kullanıcının sistem ayarlarına göre saklayabilir.</li>
+        <li>Android uygulama yedeklemesi Novi’nin özel verileri için kapalıdır. macOS gizli anahtarları cihazla sınırlı, eşitlenmeyen Keychain kayıtlarında tutulur.</li>
+        <li>Destek e-postaları, talebi yanıtlamak ve meşru kayıt yükümlülüklerini yerine getirmek için gerektiği süre boyunca e-posta sağlayıcısında kalabilir.</li>
+      </ul>
+      <p>Tüm yerel Novi verilerini kaldırmak için eşleştirilmiş cihazları ve geçmişi uygulamadan silebilir, Android uygulama verilerini temizleyebilir, macOS uygulamasını sıfırlayabilir veya uygulamaları kaldırabilirsiniz. İşletim sistemi bildirim geçmişi ve kullanıcı tarafından kaydedilmiş dosyalar ayrıca kendi konumlarından silinmelidir.</p>
+
+      <h2 id="tr-security">7. Güvenlik önlemleri</h2>
+      <p>Sürüme ve platform desteğine bağlı olarak Novi; açık kullanıcı eşleştirmesi, TLS, sertifika sabitleme, AES‑256‑GCM kimlik doğrulamalı şifreleme, HMAC bütünlük doğrulaması, tekrar saldırısı koruması, Android Keystore, macOS Keychain, uygulama sandbox’ı ve sınırlı yerel kuyruklar kullanır. Kimliği doğrulanmamış veya geçersiz istekler reddedilir.</p>
+      <p>Hiçbir yazılım veya ağ tamamen risksiz değildir. Yalnızca resmi sürümleri kullanın; cihazları güncel tutun; ekran kilidi kullanın; güvenilir ağ tercih edin; tanımadığınız cihazları kaldırın ve artık ihtiyaç duymadığınız izinleri iptal edin.</p>
+
+      <h2>8. Kullanılan izinler</h2>
+      <h3>Android</h3>
+      <p>Bildirim Erişimi; kamera; uygulamanın kendi bildirimlerini gösterme; internet, ağ durumu ve yerel ağ; bağlı cihaz türünde ön plan hizmeti; cihaz açılışında hizmet durumunu geri yükleme; titreşim; isteğe bağlı pil optimizasyonu muafiyeti ve kullanıcı tarafından etkinleştirilen ses/rahatsız etmeyin kontrolleri için Bildirim Politikası erişimi kullanılabilir. Her izin yalnızca ilişkili özellik için kullanılır ve sistem ayarlarından yönetilebilir.</p>
+      <h3>macOS</h3>
+      <p>Yerel ağ istemci/sunucu erişimi, sistem bildirim izni, kullanıcı tarafından seçilen dosyalara okuma/yazma erişimi, Keychain ve isteğe bağlı girişte başlatma kullanılabilir. Novi macOS uygulaması App Sandbox içinde çalışır.</p>
+
+      <h2 id="tr-rights">9. Tercihleriniz ve haklarınız</h2>
+      <p>Bildirim Erişimi’ni, kamerayı, Novi bildirimlerini, pil muafiyetini, Bildirim Politikası erişimini, yerel ağ erişimini ve girişte başlatmayı sistem ayarlarından değiştirebilirsiniz. Pano eşitlemesini, geçmişi, filtreleri, cihaz kontrollerini ve yönlendirmeyi uygulamadan kapatabilirsiniz. Eşleştirilmiş cihazları kaldırabilir ve yerel kayıtları silebilirsiniz.</p>
+      <p>Geliştirici tarafından tutulan destek yazışmaları gibi bir veriye ilişkin erişim, düzeltme veya silme talebiniz varsa aşağıdaki adresten iletişime geçebilirsiniz. Kimliğinizi ve başvurunun kapsamını doğrulamak için makul bilgi istenebilir. Novi merkezi hesap veya içerik sunucusu işletmediğinden cihazınızda bulunan veriye uzaktan erişemeyiz veya onu sizin adınıza silemeyiz.</p>
+
+      <h2>10. Çocukların gizliliği</h2>
+      <p>Novi genel amaçlı bir üretkenlik aracıdır ve özellikle çocuklara yönelik değildir. Geliştirici, Novi aracılığıyla çocuklardan bilerek kişisel bilgi toplayan bir sunucu işletmez. Ebeveyn ve vasiler, küçüklerin izinlerini, bildirim erişimini ve eşleştirilmiş cihazlarını denetlemelidir.</p>
+
+      <h2>11. Uluslararası kullanım ve hukuki talepler</h2>
+      <p>Temel işleme kullanıcının kontrolündeki cihazlarda gerçekleşir. Kullanıcı; uygulamayı yürürlükteki kanunlara, işyeri kurallarına, gizlilik yükümlülüklerine ve üçüncü kişilerin haklarına uygun kullanmaktan sorumludur. Geliştirici, elinde gerçekten bulunan sınırlı veriler için hukuken geçerli talepleri uygulanabilir hukuka göre değerlendirir; sahip olmadığı cihaz içeriğini teslim edemez.</p>
+
+      <h2>12. Bu sayfa ve politika değişiklikleri</h2>
+      <p>Bu sayfa analitik, reklam, izleme pikseli, harici font veya pazarlama çerezi kullanmaz. Dil seçimi cihazda saklanmaz. Bununla birlikte GitHub Pages, güvenlik ve hizmet işletimi amacıyla IP adresi ve istek günlüklerini kendi politikası kapsamında işleyebilir.</p>
+      <p>Özellikler, izinler, güvenlik uygulamaları veya hukuki gereksinimler değiştiğinde bu politika güncellenebilir. Önemli değişikliklerde üstteki tarih yenilenir ve gerektiğinde uygulama veya sürüm notları üzerinden ek bildirim yapılır.</p>
+
+      <h2 id="tr-contact">13. İletişim</h2>
+      <p><strong>Geliştirici/veri sorumlusu:</strong> Mahmut Alperen Ünal — AlpWare Studio<br>
+      <strong>Uygulama:</strong> Novi for Android ve Novi for macOS<br>
+      <strong>E-posta:</strong> <a href="mailto:contact@alpwarestudio.com">contact@alpwarestudio.com</a><br>
+      <strong>Web:</strong> <a href="https://www.alpwarestudio.com/" rel="noopener noreferrer">alpwarestudio.com</a></p>
+    </article>
+
+    <article id="english-policy" class="policy" lang="en" hidden>
+      <div class="meta">
+        <p><strong>Effective date:</strong> July 11, 2026</p>
+        <p><strong>Last updated:</strong> September 8, 2026</p>
+        <p><strong>Applications:</strong> Novi for Android and Novi for macOS</p>
+        <p><strong>Controller/developer:</strong> Mahmut Alperen Ünal — AlpWare Studio</p>
+      </div>
+
+      <div class="notice"><strong>In brief:</strong> Novi shares the Android notifications you select and content used by enabled continuity features directly with your paired Mac over the local network, without sending that content to a Developer-operated server. The apps do not sell personal data, show advertising, or perform behavioral tracking.</div>
+
+      <h2>Contents</h2>
+      <ol class="toc">
+        <li><a href="#en-scope">Scope</a></li>
+        <li><a href="#en-data">Data accessed and processed</a></li>
+        <li><a href="#en-use">Purposes</a></li>
+        <li><a href="#en-transfer">Device-to-device transfer</a></li>
+        <li><a href="#en-third-parties">Third-party services</a></li>
+        <li><a href="#en-storage">Retention and deletion</a></li>
+        <li><a href="#en-security">Security</a></li>
+        <li><a href="#en-rights">Choices and rights</a></li>
+        <li><a href="#en-contact">Contact</a></li>
+      </ol>
+
+      <h2 id="en-scope">1. Scope and architecture</h2>
+      <p>This policy applies to the official <strong>Novi Android app</strong>, official <strong>Novi macOS companion app</strong>, the local connection between them, and this GitHub Pages website.</p>
+      <p>Novi has no Novi user account and no Developer-operated notification or content-transfer cloud. Android and Mac communicate over the local network after pairing initiated by the user. App stores, operating systems, network providers, and third-party apps that create notifications are governed by their own policies.</p>
+      <p>Novi is proprietary, closed-source software. This policy applies only to official versions published by Mahmut Alperen Ünal or AlpWare Studio. Modified, repackaged, or counterfeit distributions may behave differently.</p>
+
+      <h2 id="en-data">2. Data accessed and processed</h2>
+      <h3>2.1 Android notifications</h3>
+      <p>When you voluntarily grant Android Notification Access, Novi may process the originating app name and package ID, title, text, expanded content, time, category, icon, conversation or sender information, grouping information, reply or action options, and identifiers needed to update or dismiss a notification. Notifications can contain sensitive content such as messages, verification codes, financial alerts, or health information. The originating third-party app controls that content.</p>
+
+      <h3>2.2 Notification actions and direct replies</h3>
+      <p>Where supported, you may dismiss a notification, invoke an action, or send a reply from the Mac. The command travels locally to Android and is submitted to the relevant third-party app. That app’s later processing is governed by its own privacy policy.</p>
+
+      <h3>2.3 Clipboard sync</h3>
+      <p>When clipboard sync is enabled, copied text may be transferred to the paired device together with a source device ID, timestamp, and technical ID used to prevent sync loops. You can disable the feature. Clipboard content is not sent to a Developer server. Take care before copying or syncing sensitive content.</p>
+
+      <h3>2.4 File and text transfer</h3>
+      <p>For a file or text item you explicitly choose to transfer, Novi may process its file name, type, size, integrity digest, transfer ID, progress, and error status. Content is sent only to the paired device you select. The user selects the destination on Android and the save location on macOS. Successfully saved files remain in that location until the user deletes them.</p>
+
+      <h3>2.5 Device status and remote controls</h3>
+      <p>Limited information such as connection state, device name, last-seen time, battery level, and charging state may be shown on the paired device. For user-initiated find/ring, silence, or similar controls, Novi processes the command type and result. The device-status feature deliberately excludes location, Wi‑Fi SSID history, mobile carrier history, and user content.</p>
+
+      <h3>2.6 Pairing, network, and security data</h3>
+      <p>Local IP address, port, Bonjour/local-network information, device or installation ID, protocol version, timestamps, connection health, pairing token, certificate or fingerprint, and cryptographic key material are processed locally to establish and protect the connection. The Developer does not receive this information through a Novi server.</p>
+
+      <h3>2.7 Camera and QR code</h3>
+      <p>The Android camera permission is used only when you choose to scan a pairing QR code. Photos or video are not uploaded to the Developer or intentionally retained by Novi. You may deny or revoke permission in Android settings.</p>
+
+      <h3>2.8 Local preferences, history, and diagnostics</h3>
+      <p>Selected or blocked apps, routing rules, service and startup settings, appearance preferences, paired-device records, optional bounded notification history, bounded transfer history, queues, error codes, and connection diagnostics may be stored on the device. Novi does not automatically upload them to a Developer-accessible analytics system.</p>
+
+      <h3>2.9 Purchases and Novi Pro entitlement</h3>
+      <p>Novi Pro is purchased only in the Android app through Google Play as a monthly, yearly, or one-time plan. Google processes payment and store-account information under its own terms. Novi does not see or store full payment-card information.</p>
+      <p>Android stores the active product ID, Pro tier, last successful Google Play reconciliation time, and any local revalidation deadline in protected app storage. The raw Google Play purchase token is not persistently stored or sent to a Developer server. A paired Mac may store the limited entitlement assertion sent by Android over the authenticated local connection. There is no separate Mac purchase.</p>
+
+      <h3>2.10 Support communications</h3>
+      <p>If you email us, your address, message, and information you include are processed to answer the request. Do not send notification content, pairing secrets, private keys, passwords, or verification codes.</p>
+
+      <h2 id="en-use">3. Purposes of processing</h2>
+      <p>The data above is used only to provide the features you choose; pair and authenticate devices; deliver notifications, clipboard items, files, and commands; display local history; maintain connection reliability; enforce Pro entitlement; prevent abuse and replay; explain errors; and respond to support requests.</p>
+      <p><strong>Novi does not use personal or sensitive data for advertising, ad measurement, behavioral analytics, data brokerage, credit/employment/insurance decisions, profiling, or AI model training.</strong></p>
+
+      <h2 id="en-transfer">4. Device-to-device transfer and no Developer collection</h2>
+      <p>Content is transferred only between the Android device and Mac you deliberately pair, as part of Novi’s user-visible core functionality. This is not intended as sharing with or collection by the Developer. Novi has no cloud relay, advertising server, or analytics server that receives notification, clipboard, or file content.</p>
+      <p>Anyone with access to the paired Mac, its user account, or macOS Notification Center may see forwarded content. You are responsible for securing your devices and local network. Network administrators, VPNs, and security software may observe connection metadata without seeing encrypted content.</p>
+
+      <h2 id="en-third-parties">5. Third-party services</h2>
+      <ul>
+        <li><strong>Google Play:</strong> Android distribution, in-app updates, optional review flow, payment, and purchase entitlement. Google processes its own store and technical records.</li>
+        <li><strong>Apple and the App Store:</strong> macOS distribution, updates, reviews, and operating-system services such as notifications. Novi Pro is not sold on Mac.</li>
+        <li><strong>Google ML Kit:</strong> An on-device barcode component used to scan the Android pairing QR code. Novi does not upload QR images to a Developer server.</li>
+        <li><strong>GitHub Pages:</strong> Hosts this page. GitHub may process visitor IP addresses and web-request logs for security and operation under its own policy.</li>
+        <li><strong>Apps creating notifications:</strong> Those apps remain responsible for notification content and later use of replies or actions you submit.</li>
+      </ul>
+      <p>The official Novi apps contain no advertising, behavioral analytics, user-tracking, or Developer-operated crash-reporting SDK.</p>
+
+      <h2 id="en-storage">6. Local retention and deletion</h2>
+      <p>Because Novi has no account or central user database, the Developer does not normally retain your notifications, clipboard content, files, or pairing records remotely.</p>
+      <ul>
+        <li>Pairing information and preferences may remain on the device until you remove a device, reset the app, clear app data, or uninstall.</li>
+        <li>Local notification and transfer histories are retained under in-app limits and user settings and can be cleared in the app.</li>
+        <li>Pending commands and incomplete transfer chunks are subject to bounded time or capacity and are cleaned after completion, cancellation, or expiry.</li>
+        <li>Successfully saved files remain in the user-selected location until deleted by the user in Finder or through the Android document provider.</li>
+        <li>macOS Notification Center may keep its own history under Apple’s and the user’s system settings.</li>
+        <li>Android backup is disabled for Novi private data. macOS secret keys are stored as device-bound, non-synchronizing Keychain items.</li>
+        <li>Support emails may remain with the email provider as long as needed to answer the request and satisfy legitimate record obligations.</li>
+      </ul>
+      <p>To remove local Novi data, delete paired devices and history in the apps, clear Android app data, reset the macOS app, or uninstall. System notification history and files you saved must be deleted separately from their respective locations.</p>
+
+      <h2 id="en-security">7. Security</h2>
+      <p>Depending on version and platform support, Novi uses explicit pairing, TLS, certificate pinning, AES‑256‑GCM authenticated encryption, HMAC integrity checks, replay protection, Android Keystore, macOS Keychain, app sandboxing, and bounded local queues. Unauthenticated or invalid requests are rejected.</p>
+      <p>No software or network is completely risk-free. Use official releases, keep devices updated, enable screen locks, prefer trusted networks, remove unknown devices, and revoke permissions you no longer need.</p>
+
+      <h2>8. Permissions</h2>
+      <h3>Android</h3>
+      <p>Novi may use Notification Access; camera; permission to show Novi’s own notifications; internet, network-state, and local-network access; a connected-device foreground service; boot completion to restore selected service state; vibration; optional battery-optimization exemption; and Notification Policy access for user-enabled audio or Do Not Disturb controls. Each permission is used only for its related feature and can be managed in system settings.</p>
+      <h3>macOS</h3>
+      <p>Novi may use local-network client/server access, system notification permission, read/write access to user-selected files, Keychain, and optional launch at login. The Novi macOS app operates inside App Sandbox.</p>
+
+      <h2 id="en-rights">9. Your choices and rights</h2>
+      <p>You can change Notification Access, camera, Novi notifications, battery exemption, Notification Policy access, local-network access, and launch at login through system settings. You can disable clipboard sync, history, filters, device controls, and routing in the apps. You can remove paired devices and delete local records.</p>
+      <p>Contact us to request access, correction, or deletion of data the Developer actually holds, such as support correspondence. We may request reasonable information to verify identity and scope. Because Novi operates no central account or content server, we cannot remotely access or delete data that exists only on your devices.</p>
+
+      <h2>10. Children</h2>
+      <p>Novi is a general-purpose productivity utility and is not directed specifically to children. The Developer does not operate a Novi server that knowingly collects personal information from children. Parents and guardians should supervise minors’ permissions, notification access, and paired devices.</p>
+
+      <h2>11. International use and legal requests</h2>
+      <p>Core processing occurs on devices controlled by the user. Users are responsible for complying with applicable law, workplace policy, confidentiality duties, and third-party rights. The Developer evaluates legally valid requests only for the limited information actually held and cannot produce device content the Developer does not possess.</p>
+
+      <h2>12. This website and policy changes</h2>
+      <p>This page uses no analytics, advertising, tracking pixels, external fonts, or marketing cookies. The language choice is not stored. GitHub Pages may nevertheless process IP addresses and request logs for security and operation under GitHub’s policy.</p>
+      <p>We may update this policy when features, permissions, security practices, or legal requirements change. Material changes will update the date above and may receive additional notice in the app or release notes where appropriate.</p>
+
+      <h2 id="en-contact">13. Contact</h2>
+      <p><strong>Developer/controller:</strong> Mahmut Alperen Ünal — AlpWare Studio<br>
+      <strong>Applications:</strong> Novi for Android and Novi for macOS<br>
+      <strong>Email:</strong> <a href="mailto:contact@alpwarestudio.com">contact@alpwarestudio.com</a><br>
+      <strong>Website:</strong> <a href="https://www.alpwarestudio.com/" rel="noopener noreferrer">alpwarestudio.com</a></p>
+    </article>
+  </main>
+
+  <footer class="shell">© 2026 Mahmut Alperen Ünal / AlpWare Studio. Novi is proprietary software. All rights reserved.</footer>
+
+  <script>
+    (() => {
+      const policies = { tr: document.querySelector('#turkish-policy'), en: document.querySelector('#english-policy') };
+      const buttons = [...document.querySelectorAll('[data-language]')];
+      const selectLanguage = (language) => {
+        const selected = language === 'en' ? 'en' : 'tr';
+        document.documentElement.lang = selected;
+        document.title = selected === 'tr' ? 'Novi Gizlilik Politikası' : 'Novi Privacy Policy';
+        Object.entries(policies).forEach(([code, element]) => { element.hidden = code !== selected; });
+        buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.language === selected)));
+      };
+      buttons.forEach((button) => button.addEventListener('click', () => selectLanguage(button.dataset.language)));
+      selectLanguage((navigator.language || '').toLowerCase().startsWith('tr') ? 'tr' : 'en');
+    })();
+  </script>
+</body>
+</html>

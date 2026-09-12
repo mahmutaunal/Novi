@@ -22,7 +22,7 @@
 <p align="center"><em>Coming soon.</em></p>
 
 <p align="center">
-  <img src="assets/feature-graphic-en.png" alt="Novi connects Android and Mac into one seamless ecosystem" width="100%">
+  <img src="assets/store/google-play/en/feature-graphic-en.png" alt="Novi connects Android and Mac into one seamless ecosystem" width="100%">
 </p>
 
 ## Two systems. One flow.

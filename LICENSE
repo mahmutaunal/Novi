@@ -1,0 +1,77 @@
+Novi Proprietary Software License
+
+Copyright © 2026 Mahmut Alperen Ünal / AlpWare Studio.
+All rights reserved.
+
+1. Proprietary status
+
+Novi, including its Android and macOS applications, source code, object code,
+user interfaces, designs, documentation, protocols, build files, and related
+assets (collectively, the “Software”), is proprietary and confidential software.
+The Software is not open source.
+
+2. No source-code license
+
+No permission or license is granted to use, copy, reproduce, modify, adapt,
+translate, merge, publish, distribute, sublicense, sell, disclose, host, make
+available, or create derivative works from the Software or any portion of it,
+except with prior written permission from the copyright holder or where such a
+restriction is prohibited by applicable law.
+
+Possession of, access to, or visibility of the Software or its source code does
+not grant any intellectual-property right or license. All rights not expressly
+granted in writing are reserved.
+
+3. Official application use
+
+End users may install and use officially distributed binary versions of Novi
+only in accordance with the applicable store terms, Novi Terms of Use, and any
+end-user license terms presented with the official distribution. This notice
+does not authorize redistribution of application binaries or source code.
+
+4. Restrictions
+
+Except where expressly permitted by prior written authorization or applicable
+law, you may not:
+
+- copy, modify, translate, adapt, or create derivative works of the Software;
+- redistribute, publish, sell, rent, lease, sublicense, or otherwise transfer it;
+- reverse engineer, decompile, disassemble, or attempt to derive its source,
+  protocols, keys, or protected implementation details;
+- remove, obscure, or alter copyright, trademark, attribution, or proprietary
+  notices; or
+- use the Software or its confidential materials to build or assist a competing
+  product or service.
+
+5. Third-party components
+
+The Software may include or depend on third-party components. Those components
+remain subject to their respective copyright notices and license terms. This
+proprietary license applies only to Novi materials owned by Mahmut Alperen Ünal
+or AlpWare Studio and does not replace or restrict rights granted directly by a
+third-party license.
+
+6. No warranty
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+“AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+TITLE, AND NON-INFRINGEMENT.
+
+7. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER AND
+ALPWARE STUDIO WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF DATA, PROFITS,
+REVENUE, BUSINESS, OR GOODWILL, ARISING FROM OR RELATED TO THE SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8. Written permission and contact
+
+Requests for a written commercial, evaluation, integration, or other license
+must be sent to:
+
+contact@alpwarestudio.com
+
+No permission is effective unless it is provided in writing by the copyright
+holder or an authorized representative of AlpWare Studio.

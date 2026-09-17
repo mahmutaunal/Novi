@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#">
+  <a href="https://play.google.com/store/apps/details?id=com.alpware.notifybridge">
     <img src="https://img.shields.io/badge/Get_it_on-Google_Play-000000?style=for-the-badge&amp;logo=googleplay&amp;logoColor=white" alt="Get Novi on Google Play" height="52">
   </a>
   &nbsp;

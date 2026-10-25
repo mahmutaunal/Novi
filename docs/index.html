@@ -119,20 +119,20 @@
   <main class="shell">
     <div class="summary-grid" aria-label="Gizlilik özeti">
       <div class="summary-card"><strong>Yerel bağlantı</strong>İçerik, eşleştirdiğiniz Android ve Mac arasında doğrudan aktarılır.</div>
-      <div class="summary-card"><strong>Takip ve reklam yok</strong>Novi reklam, davranış analitiği veya kullanıcı profilleme SDK’sı içermez.</div>
+      <div class="summary-card"><strong>Firebase Analytics / Crashlytics</strong>Kullanım ve hata verileri otomatik gönderilir. Usage and error data is sent automatically.</div>
       <div class="summary-card"><strong>Hesap gerektirmez</strong>Novi hesabı veya geliştirici tarafından işletilen içerik bulutu bulunmaz.</div>
     </div>
 
     <article id="turkish-policy" class="policy" lang="tr">
       <div class="meta">
         <p><strong>Yürürlük tarihi:</strong> 11 Temmuz 2026</p>
-        <p><strong>Son güncelleme:</strong> 8 Eylül 2026</p>
+        <p><strong>Son güncelleme:</strong> 25 Ekim 2026</p>
         <p><strong>Uygulamalar:</strong> Novi for Android ve Novi for macOS</p>
         <p><strong>Veri sorumlusu/geliştirici:</strong> Mahmut Alperen Ünal — AlpWare Studio</p>
       </div>
 
       <div class="notice">
-        <strong>Kısa açıklama:</strong> Novi, seçtiğiniz Android bildirimlerini ve etkinleştirdiğiniz süreklilik özelliklerinin içeriğini, geliştirici tarafından işletilen bir içerik sunucusuna göndermeden eşleştirilmiş Mac’inizle yerel ağ üzerinden paylaşır. Uygulamalar kişisel verilerinizi satmaz, reklam göstermez ve davranışsal takip yapmaz.
+        <strong>Kısa açıklama:</strong> Novi, seçtiğiniz Android bildirimlerini ve etkinleştirdiğiniz süreklilik özelliklerinin içeriğini, geliştirici tarafından işletilen bir içerik sunucusuna göndermeden eşleştirilmiş Mac’inizle yerel ağ üzerinden paylaşır. Üretim sürümleri ilk açılıştan itibaren Google Firebase Analytics ve Crashlytics ile kullanım ve hata verilerini otomatik gönderir. Uygulama içinde kapatma seçeneği yoktur. Reklam gösterilmez ve kişisel veriler satılmaz.
       </div>
 
       <h2>İçindekiler</h2>
@@ -176,7 +176,7 @@
       <p>Android kamera izni yalnızca siz eşleştirme QR kodunu taramayı seçtiğinizde kullanılır. Fotoğraf veya video geliştiriciye yüklenmez ve Novi tarafından bilerek saklanmaz. İzni Android ayarlarından reddedebilir veya kaldırabilirsiniz.</p>
 
       <h3>2.8 Yerel tercihler, geçmiş ve tanılama</h3>
-      <p>Seçilen/engellenen uygulamalar, yönlendirme kuralları, hizmet ve başlangıç ayarları, tema tercihleri, eşleştirilmiş cihaz kayıtları, isteğe bağlı ve sınırlı bildirim geçmişi, sınırlı aktarım geçmişi, kuyruklar, hata kodları ve bağlantı tanıları cihazda tutulabilir. Novi, bunları geliştiricinin erişebildiği bir analiz sistemine otomatik olarak göndermez.</p>
+      <p>Seçilen/engellenen uygulamalar, yönlendirme kuralları, hizmet ve başlangıç ayarları, tema tercihleri, eşleştirilmiş cihaz kayıtları, isteğe bağlı ve sınırlı bildirim geçmişi, sınırlı aktarım geçmişi, kuyruklar, hata kodları ve bağlantı tanıları cihazda tutulabilir. Bu yerel kayıtlar bütünüyle Firebase’e yüklenmez; özellik kullanımı, sonuç kategorileri ve sınırlı hata bağlamı aşağıdaki telemetriye dahil olabilir.</p>
 
       <h3>2.9 Satın alma ve Novi Pro yetkisi</h3>
       <p>Novi Pro yalnızca Android uygulamasında Google Play üzerinden aylık, yıllık veya tek seferlik planla satın alınır. Google ödeme ve mağaza hesabı bilgilerini kendi koşullarına göre işler; Novi tam ödeme kartı bilgilerini görmez veya saklamaz.</p>
@@ -185,11 +185,17 @@
       <h3>2.10 Destek iletişimi</h3>
       <p>Bize e-posta gönderirseniz e-posta adresiniz, mesajınız ve eklediğiniz bilgiler talebinizi yanıtlamak için işlenir. Bildirim içeriği, eşleştirme sırrı, özel anahtar, parola veya doğrulama kodu göndermeyin.</p>
 
-      <h2 id="tr-use">3. Verileri kullanma amaçlarımız</h2>
-      <p>Yukarıdaki veriler yalnızca seçtiğiniz özellikleri sağlamak; cihazları eşleştirmek ve doğrulamak; bildirim, pano, dosya ve komutları iletmek; yerel geçmişi göstermek; bağlantı güvenilirliğini korumak; Pro yetkisini uygulamak; kötüye kullanımı ve tekrar saldırılarını engellemek; hata durumunu kullanıcıya açıklamak ve destek taleplerini yanıtlamak için kullanılır.</p>
-      <p><strong>Novi; reklam, reklam ölçümü, davranış analitiği, veri komisyonculuğu, kredi/istihdam/sigorta kararı, kullanıcı profilleme veya yapay zekâ modeli eğitimi amacıyla kişisel ya da hassas verileri kullanmaz.</strong></p>
+      <h3 id="tr-telemetry">2.11 Otomatik kullanım ve hata verileri</h3>
+      <p>Google Firebase Analytics ve Crashlytics, Android ve macOS üretim sürümlerinde ilk açılıştan itibaren otomatik etkindir. Ayrı izin ekranı veya uygulama içi kapatma anahtarı yoktur. Geliştirme/test derlemelerinde gönderim varsayılan olarak kapalıdır.</p>
+      <p>Analytics; uygulama açılışı ve oturumları, görüntülenen ekranlar, kurulum/eşleştirme adımları, özellik kullanımı, aktarım sonucu ile boyut/süre aralıkları ve Android satın alma/geri yükleme akışındaki plan ve sonuç kategorilerini işler. SDK ayrıca uygulama kurulum/oturum tanımlayıcıları, sürüm, işletim sistemi, cihaz modeli ve dil gibi teknik veriler toplar. Bağlantı IP adresinden yaklaşık ülke/şehir bilgisi türetilebilir; uygulama hassas konum izni istemez. Google Play bağlantısı ve SDK davranışına bağlı otomatik satın alma ölçümleri ürün, tutar ve para birimi gibi alanlar içerebilir.</p>
+      <p>Crashlytics; çökme, desteklenen Android sürümlerinde yanıt vermeme (ANR), seçilmiş yakalanmış hatalar, stack trace, zaman, uygulama/işletim sistemi/cihaz bilgileri, kurulum ve oturum tanımlayıcıları ile sınırlı işlem/sonuç/hata kategorilerini işler. Analytics olayları çökme öncesi işlem izi olarak rapora eklenebilir. Otomatik çökme raporları exception mesajı ve teknik yürütme bağlamı içerebilir.</p>
+      <p>Novi’nin özel olay ve hata alanlarına bildirim başlığı/gövdesi, gönderen/yanıt, pano metni, dosya adı/yolu/içeriği, yerel IP/URL, cihaz adı, eşleştirme sırrı, e-posta, sipariş kimliği veya satın alma belirteci eklenmez. Bu sınır, SDK’nın otomatik çökme alanlarında hiçbir hassas verinin bulunamayacağı garantisi değildir. Reklam kimliği toplama ve reklam kişiselleştirme sinyalleri kapalıdır; özel kullanıcı kimliği atanmaz. Kurulum/oturum kimlikleri nedeniyle veriler tamamen anonim olarak tanımlanmaz.</p>
 
-      <h2 id="tr-transfer">4. Cihazlar arası aktarım ve geliştirici tarafından veri toplanmaması</h2>
+      <h2 id="tr-use">3. Verileri kullanma amaçlarımız</h2>
+      <p>Yukarıdaki veriler yalnızca seçtiğiniz özellikleri sağlamak; cihazları eşleştirmek ve doğrulamak; bildirim, pano, dosya ve komutları iletmek; yerel geçmişi göstermek; bağlantı güvenilirliğini korumak; Pro yetkisini uygulamak; kötüye kullanımı ve tekrar saldırılarını engellemek; hata durumunu kullanıcıya açıklamak ve destek taleplerini yanıtlamak için kullanılır. Firebase verileri ayrıca özellik kullanımını ve kurulum akışlarını ölçmek, hataları tespit etmek ve uygulama güvenilirliğini geliştirmek için kullanılır.</p>
+      <p><strong>Novi; reklam, reklam ölçümü, veri komisyonculuğu, kredi/istihdam/sigorta kararı, kullanıcı profilleme veya yapay zekâ modeli eğitimi amacıyla kişisel ya da hassas verileri kullanmaz.</strong></p>
+
+      <h2 id="tr-transfer">4. Cihazlar arası aktarım ve telemetri ayrımı</h2>
       <p>İçerik, temel işlevin parçası olarak yalnızca bilerek eşleştirdiğiniz Android ve Mac arasında aktarılır. Bu aktarım, geliştiriciye veri paylaşımı veya geliştirici tarafından veri toplama amacı taşımaz. Novi’nin bildirim, pano veya dosya içeriğini alan bir bulut rölesi, reklam sunucusu ya da analiz sunucusu yoktur.</p>
       <p>Eşleştirilmiş Mac’e, Mac kullanıcı hesabına veya macOS Bildirim Merkezi’ne erişebilen kişiler iletilen içeriği görebilir. Cihazlarınızı ve yerel ağınızı korumak sizin sorumluluğunuzdadır. Ağ yöneticileri, VPN veya güvenlik yazılımları şifreli içeriği görmeden bağlantı meta verilerini gözlemleyebilir.</p>
 
@@ -201,9 +207,9 @@
         <li><strong>GitHub Pages:</strong> Bu sayfayı barındırır. GitHub, güvenlik ve hizmet işletimi için ziyaretçi IP adresi ve web isteği günlükleri gibi teknik verileri kendi politikasına göre işleyebilir.</li>
         <li><strong>Bildirim üreten uygulamalar:</strong> Bildirim içeriklerinden ve Mac’ten gönderdiğiniz yanıt veya eylemlerin sonraki kullanımından kendileri sorumludur.</li>
       </ul>
-      <p>Resmi Novi uygulamalarında reklam, davranış analitiği, kullanıcı takibi veya geliştirici tarafından işletilen çökme raporlama SDK’sı bulunmaz.</p>
+      <p><strong>Google Firebase Analytics ve Crashlytics:</strong> Bölüm 2.11’de açıklanan kullanım ve hata verileri, geliştiricinin analiz ve hata çözümlemesi için erişebildiği Google hizmetlerine gönderilir. Bu, yerel cihaz bağlantısından ayrı bir internet aktarımıdır. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a> ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> için bu bağlantılara bakın.</p>
 
-      <h2 id="tr-storage">6. Yerel saklama, süreler ve silme</h2>
+      <h2 id="tr-storage">6. Saklama, süreler ve silme</h2>
       <p>Novi hesabı ve merkezi kullanıcı veritabanı bulunmadığından geliştirici normal olarak bildirimlerinizi, pano içeriğinizi, dosyalarınızı veya eşleştirme kayıtlarınızı uzaktan saklamaz.</p>
       <ul>
         <li>Eşleştirme bilgileri ve tercihler, cihazı kaldırana, uygulamayı sıfırlayana, verileri temizleyene veya uygulamayı kaldırana kadar cihazda kalabilir.</li>
@@ -215,6 +221,8 @@
         <li>Destek e-postaları, talebi yanıtlamak ve meşru kayıt yükümlülüklerini yerine getirmek için gerektiği süre boyunca e-posta sağlayıcısında kalabilir.</li>
       </ul>
       <p>Tüm yerel Novi verilerini kaldırmak için eşleştirilmiş cihazları ve geçmişi uygulamadan silebilir, Android uygulama verilerini temizleyebilir, macOS uygulamasını sıfırlayabilir veya uygulamaları kaldırabilirsiniz. İşletim sistemi bildirim geçmişi ve kullanıcı tarafından kaydedilmiş dosyalar ayrıca kendi konumlarından silinmelidir.</p>
+
+      <p>Firebase telemetrisi cihaz dışında saklanır. Crashlytics, çökme kayıtlarını ve ilişkili tanımlayıcıları 90 gün sakladıktan sonra canlı ve yedek sistemlerden kaldırma sürecini başlatır. Analytics kullanıcı/olay düzeyi saklama süresi ilgili mülkün ayarlarına bağlıdır; standart toplu raporlar aynı silme süresine tabi değildir. Uygulamayı kaldırmak veya yerel geçmişi temizlemek, Google’a daha önce gönderilmiş verileri otomatik silmez. Erişim/silme talepleri için bizimle iletişime geçebilirsiniz; özel hesap kimliği tutulmadığı için belirli bir telemetri kaydını size bağlamak her zaman mümkün olmayabilir. Talep için sır veya hassas içerik göndermeyin.</p>
 
       <h2 id="tr-security">7. Güvenlik önlemleri</h2>
       <p>Sürüme ve platform desteğine bağlı olarak Novi; açık kullanıcı eşleştirmesi, TLS, sertifika sabitleme, AES‑256‑GCM kimlik doğrulamalı şifreleme, HMAC bütünlük doğrulaması, tekrar saldırısı koruması, Android Keystore, macOS Keychain, uygulama sandbox’ı ve sınırlı yerel kuyruklar kullanır. Kimliği doğrulanmamış veya geçersiz istekler reddedilir.</p>
@@ -228,13 +236,13 @@
 
       <h2 id="tr-rights">9. Tercihleriniz ve haklarınız</h2>
       <p>Bildirim Erişimi’ni, kamerayı, Novi bildirimlerini, pil muafiyetini, Bildirim Politikası erişimini, yerel ağ erişimini ve girişte başlatmayı sistem ayarlarından değiştirebilirsiniz. Pano eşitlemesini, geçmişi, filtreleri, cihaz kontrollerini ve yönlendirmeyi uygulamadan kapatabilirsiniz. Eşleştirilmiş cihazları kaldırabilir ve yerel kayıtları silebilirsiniz.</p>
-      <p>Geliştirici tarafından tutulan destek yazışmaları gibi bir veriye ilişkin erişim, düzeltme veya silme talebiniz varsa aşağıdaki adresten iletişime geçebilirsiniz. Kimliğinizi ve başvurunun kapsamını doğrulamak için makul bilgi istenebilir. Novi merkezi hesap veya içerik sunucusu işletmediğinden cihazınızda bulunan veriye uzaktan erişemeyiz veya onu sizin adınıza silemeyiz.</p>
+      <p>Firebase telemetrisi veya geliştirici tarafından tutulan destek yazışmaları gibi bir veriye ilişkin erişim, düzeltme veya silme talebiniz varsa aşağıdaki adresten iletişime geçebilirsiniz. Kimliğinizi ve başvurunun kapsamını doğrulamak için makul bilgi istenebilir. Novi merkezi hesap veya içerik sunucusu işletmediğinden cihazınızda bulunan veriye uzaktan erişemeyiz veya onu sizin adınıza silemeyiz.</p>
 
       <h2>10. Çocukların gizliliği</h2>
-      <p>Novi genel amaçlı bir üretkenlik aracıdır ve özellikle çocuklara yönelik değildir. Geliştirici, Novi aracılığıyla çocuklardan bilerek kişisel bilgi toplayan bir sunucu işletmez. Ebeveyn ve vasiler, küçüklerin izinlerini, bildirim erişimini ve eşleştirilmiş cihazlarını denetlemelidir.</p>
+      <p>Novi genel amaçlı bir üretkenlik aracıdır ve özellikle çocuklara yönelik değildir. Novi çocuklara özel hesap veya profil oluşturmaz; üretim sürümlerinin otomatik Firebase telemetrisi bu politikada açıklanan şekilde çalışır. Ebeveyn ve vasiler, küçüklerin izinlerini, bildirim erişimini ve eşleştirilmiş cihazlarını denetlemelidir.</p>
 
       <h2>11. Uluslararası kullanım ve hukuki talepler</h2>
-      <p>Temel işleme kullanıcının kontrolündeki cihazlarda gerçekleşir. Kullanıcı; uygulamayı yürürlükteki kanunlara, işyeri kurallarına, gizlilik yükümlülüklerine ve üçüncü kişilerin haklarına uygun kullanmaktan sorumludur. Geliştirici, elinde gerçekten bulunan sınırlı veriler için hukuken geçerli talepleri uygulanabilir hukuka göre değerlendirir; sahip olmadığı cihaz içeriğini teslim edemez.</p>
+      <p>İçerik aktarımı kullanıcının kontrolündeki cihazlarda gerçekleşir. Firebase/Google telemetrisi Google’ın küresel altyapısında, bulunduğunuz ülke dışında da işlenebilir ve saklanabilir. Kullanıcı; uygulamayı yürürlükteki kanunlara, işyeri kurallarına, gizlilik yükümlülüklerine ve üçüncü kişilerin haklarına uygun kullanmaktan sorumludur. Geliştirici, elinde gerçekten bulunan sınırlı veriler için hukuken geçerli talepleri uygulanabilir hukuka göre değerlendirir; sahip olmadığı cihaz içeriğini teslim edemez.</p>
 
       <h2>12. Bu sayfa ve politika değişiklikleri</h2>
       <p>Bu sayfa analitik, reklam, izleme pikseli, harici font veya pazarlama çerezi kullanmaz. Dil seçimi cihazda saklanmaz. Bununla birlikte GitHub Pages, güvenlik ve hizmet işletimi amacıyla IP adresi ve istek günlüklerini kendi politikası kapsamında işleyebilir.</p>
@@ -250,12 +258,12 @@
     <article id="english-policy" class="policy" lang="en" hidden>
       <div class="meta">
         <p><strong>Effective date:</strong> July 11, 2026</p>
-        <p><strong>Last updated:</strong> September 8, 2026</p>
+        <p><strong>Last updated:</strong> October 25, 2026</p>
         <p><strong>Applications:</strong> Novi for Android and Novi for macOS</p>
         <p><strong>Controller/developer:</strong> Mahmut Alperen Ünal — AlpWare Studio</p>
       </div>
 
-      <div class="notice"><strong>In brief:</strong> Novi shares the Android notifications you select and content used by enabled continuity features directly with your paired Mac over the local network, without sending that content to a Developer-operated server. The apps do not sell personal data, show advertising, or perform behavioral tracking.</div>
+      <div class="notice"><strong>In brief:</strong> Novi shares the Android notifications you select and content used by enabled continuity features directly with your paired Mac over the local network, without sending that content to a Developer-operated server. Production versions automatically send usage and error data to Google Firebase Analytics and Crashlytics from first launch. There is no in-app opt-out switch. The apps do not show advertising or sell personal data.</div>
 
       <h2>Contents</h2>
       <ol class="toc">
@@ -298,7 +306,7 @@
       <p>The Android camera permission is used only when you choose to scan a pairing QR code. Photos or video are not uploaded to the Developer or intentionally retained by Novi. You may deny or revoke permission in Android settings.</p>
 
       <h3>2.8 Local preferences, history, and diagnostics</h3>
-      <p>Selected or blocked apps, routing rules, service and startup settings, appearance preferences, paired-device records, optional bounded notification history, bounded transfer history, queues, error codes, and connection diagnostics may be stored on the device. Novi does not automatically upload them to a Developer-accessible analytics system.</p>
+      <p>Selected or blocked apps, routing rules, service and startup settings, appearance preferences, paired-device records, optional bounded notification history, bounded transfer history, queues, error codes, and connection diagnostics may be stored on the device. These local records are not uploaded in full to Firebase; feature use, outcome categories, and limited error context may be included in the telemetry below.</p>
 
       <h3>2.9 Purchases and Novi Pro entitlement</h3>
       <p>Novi Pro is purchased only in the Android app through Google Play as a monthly, yearly, or one-time plan. Google processes payment and store-account information under its own terms. Novi does not see or store full payment-card information.</p>
@@ -307,13 +315,19 @@
       <h3>2.10 Support communications</h3>
       <p>If you email us, your address, message, and information you include are processed to answer the request. Do not send notification content, pairing secrets, private keys, passwords, or verification codes.</p>
 
-      <h2 id="en-use">3. Purposes of processing</h2>
-      <p>The data above is used only to provide the features you choose; pair and authenticate devices; deliver notifications, clipboard items, files, and commands; display local history; maintain connection reliability; enforce Pro entitlement; prevent abuse and replay; explain errors; and respond to support requests.</p>
-      <p><strong>Novi does not use personal or sensitive data for advertising, ad measurement, behavioral analytics, data brokerage, credit/employment/insurance decisions, profiling, or AI model training.</strong></p>
+      <h3 id="en-telemetry">2.11 Automatic usage and error data</h3>
+      <p>Google Firebase Analytics and Crashlytics are automatically enabled in production Android and macOS versions from first launch. There is no separate permission prompt or in-app opt-out switch. Transmission is disabled by default in development/test builds.</p>
+      <p>Analytics processes app launches and sessions, viewed screens, onboarding/pairing steps, feature use, transfer outcomes and size/duration ranges, and plan and outcome categories in Android purchase/restore flows. The SDK also collects app-installation/session identifiers and technical data such as version, operating system, device model, and language. Approximate country/city may be derived from the connection IP address; the app does not request precise location permission. Depending on the Google Play link and SDK behavior, automatic purchase measurements may include product, amount, and currency.</p>
+      <p>Crashlytics processes crashes, application-not-responding (ANR) events on supported Android versions, selected handled errors, stack traces, timestamps, app/OS/device information, installation and session identifiers, and limited operation/outcome/error categories. Analytics events may be attached as breadcrumbs preceding a crash. Automatic crash reports may contain exception messages and technical execution context.</p>
+      <p>Novi does not add notification titles/bodies, senders/replies, clipboard text, file names/paths/contents, local IP addresses/URLs, device names, pairing secrets, email addresses, order IDs, or purchase tokens to its custom event and error fields. This boundary does not guarantee that automatic SDK crash fields can never contain sensitive information. Advertising-identifier collection and advertising-personalization signals are disabled; no custom user ID is assigned. Installation/session identifiers mean the data is not described as fully anonymous.</p>
 
-      <h2 id="en-transfer">4. Device-to-device transfer and no Developer collection</h2>
+      <h2 id="en-use">3. Purposes of processing</h2>
+      <p>The data above is used only to provide the features you choose; pair and authenticate devices; deliver notifications, clipboard items, files, and commands; display local history; maintain connection reliability; enforce Pro entitlement; prevent abuse and replay; explain errors; and respond to support requests. Firebase data is also used to measure feature use and onboarding flows, identify errors, and improve app reliability.</p>
+      <p><strong>Novi does not use personal or sensitive data for advertising, ad measurement, data brokerage, credit/employment/insurance decisions, profiling, or AI model training.</strong></p>
+
+      <h2 id="en-transfer">4. Device-to-device transfer and telemetry boundary</h2>
       <p>Content is transferred only between the Android device and Mac you deliberately pair, as part of Novi’s user-visible core functionality. This is not intended as sharing with or collection by the Developer. Novi has no cloud relay, advertising server, or analytics server that receives notification, clipboard, or file content.</p>
-      <p>Anyone with access to the paired Mac, its user account, or macOS Notification Center may see forwarded content. You are responsible for securing your devices and local network. Network administrators, VPNs, and security software may observe connection metadata without seeing encrypted content.</p>
+      <p>Anyone with access to the paired Mac or its user account may see forwarded content in Novi’s cards and inbox. Notifications delivered by earlier versions, including file transfer alerts, may also remain in macOS Notification Center. You are responsible for securing your devices and local network. Network administrators, VPNs, and security software may observe connection metadata without seeing encrypted content.</p>
 
       <h2 id="en-third-parties">5. Third-party services</h2>
       <ul>
@@ -323,20 +337,22 @@
         <li><strong>GitHub Pages:</strong> Hosts this page. GitHub may process visitor IP addresses and web-request logs for security and operation under its own policy.</li>
         <li><strong>Apps creating notifications:</strong> Those apps remain responsible for notification content and later use of replies or actions you submit.</li>
       </ul>
-      <p>The official Novi apps contain no advertising, behavioral analytics, user-tracking, or Developer-operated crash-reporting SDK.</p>
+      <p><strong>Google Firebase Analytics and Crashlytics:</strong> Usage and error data described in section 2.11 is sent to Google services accessible to the Developer for analysis and debugging. This internet transmission is separate from the local device connection. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-      <h2 id="en-storage">6. Local retention and deletion</h2>
+      <h2 id="en-storage">6. Retention and deletion</h2>
       <p>Because Novi has no account or central user database, the Developer does not normally retain your notifications, clipboard content, files, or pairing records remotely.</p>
       <ul>
         <li>Pairing information and preferences may remain on the device until you remove a device, reset the app, clear app data, or uninstall.</li>
         <li>Local notification and transfer histories are retained under in-app limits and user settings and can be cleared in the app.</li>
         <li>Pending commands and incomplete transfer chunks are subject to bounded time or capacity and are cleaned after completion, cancellation, or expiry.</li>
         <li>Successfully saved files remain in the user-selected location until deleted by the user in Finder or through the Android document provider.</li>
-        <li>macOS Notification Center may keep its own history under Apple’s and the user’s system settings.</li>
+        <li>macOS Notification Center may keep notifications delivered by earlier versions, including file transfer alerts, under Apple’s and the user’s system settings.</li>
         <li>Android backup is disabled for Novi private data. macOS secret keys are stored as device-bound, non-synchronizing Keychain items.</li>
         <li>Support emails may remain with the email provider as long as needed to answer the request and satisfy legitimate record obligations.</li>
       </ul>
       <p>To remove local Novi data, delete paired devices and history in the apps, clear Android app data, reset the macOS app, or uninstall. System notification history and files you saved must be deleted separately from their respective locations.</p>
+
+      <p>Firebase telemetry is stored off-device. Crashlytics retains crash records and associated identifiers for 90 days before beginning removal from live and backup systems. Analytics user/event-level retention depends on the property settings; standard aggregated reports are not subject to the same deletion period. Uninstalling the app or clearing local history does not automatically delete data already sent to Google. Contact us for access/deletion requests; without a custom account identifier, we may not be able to associate a particular telemetry record with you. Do not send secrets or sensitive content with a request.</p>
 
       <h2 id="en-security">7. Security</h2>
       <p>Depending on version and platform support, Novi uses explicit pairing, TLS, certificate pinning, AES‑256‑GCM authenticated encryption, HMAC integrity checks, replay protection, Android Keystore, macOS Keychain, app sandboxing, and bounded local queues. Unauthenticated or invalid requests are rejected.</p>
@@ -346,17 +362,17 @@
       <h3>Android</h3>
       <p>Novi may use Notification Access; camera; permission to show Novi’s own notifications; internet, network-state, and local-network access; a connected-device foreground service; boot completion to restore selected service state; vibration; optional battery-optimization exemption; and Notification Policy access for user-enabled audio or Do Not Disturb controls. Each permission is used only for its related feature and can be managed in system settings.</p>
       <h3>macOS</h3>
-      <p>Novi may use local-network client/server access, system notification permission, read/write access to user-selected files, Keychain, and optional launch at login. The Novi macOS app operates inside App Sandbox.</p>
+      <p>Novi may use local-network client/server access, read/write access to user-selected files, Keychain, and optional launch at login. Current Android and file transfer cards appear inside Novi without macOS system notification permission. Earlier versions may have requested that permission. The Novi macOS app operates inside App Sandbox.</p>
 
       <h2 id="en-rights">9. Your choices and rights</h2>
       <p>You can change Notification Access, camera, Novi notifications, battery exemption, Notification Policy access, local-network access, and launch at login through system settings. You can disable clipboard sync, history, filters, device controls, and routing in the apps. You can remove paired devices and delete local records.</p>
-      <p>Contact us to request access, correction, or deletion of data the Developer actually holds, such as support correspondence. We may request reasonable information to verify identity and scope. Because Novi operates no central account or content server, we cannot remotely access or delete data that exists only on your devices.</p>
+      <p>Contact us to request access, correction, or deletion of data the Developer actually holds, such as Firebase telemetry or support correspondence. We may request reasonable information to verify identity and scope. Because Novi operates no central account or content server, we cannot remotely access or delete data that exists only on your devices.</p>
 
       <h2>10. Children</h2>
-      <p>Novi is a general-purpose productivity utility and is not directed specifically to children. The Developer does not operate a Novi server that knowingly collects personal information from children. Parents and guardians should supervise minors’ permissions, notification access, and paired devices.</p>
+      <p>Novi is a general-purpose productivity utility and is not directed specifically to children. Novi does not create child-specific accounts or profiles; production versions nevertheless send automatic Firebase telemetry as described in this policy. Parents and guardians should supervise minors’ permissions, notification access, and paired devices.</p>
 
       <h2>11. International use and legal requests</h2>
-      <p>Core processing occurs on devices controlled by the user. Users are responsible for complying with applicable law, workplace policy, confidentiality duties, and third-party rights. The Developer evaluates legally valid requests only for the limited information actually held and cannot produce device content the Developer does not possess.</p>
+      <p>Content transfer occurs on devices controlled by the user. Firebase/Google telemetry may be processed and stored on Google’s global infrastructure outside your country. Users are responsible for complying with applicable law, workplace policy, confidentiality duties, and third-party rights. The Developer evaluates legally valid requests only for the limited information actually held and cannot produce device content the Developer does not possess.</p>
 
       <h2>12. This website and policy changes</h2>
       <p>This page uses no analytics, advertising, tracking pixels, external fonts, or marketing cookies. The language choice is not stored. GitHub Pages may nevertheless process IP addresses and request logs for security and operation under GitHub’s policy.</p>
